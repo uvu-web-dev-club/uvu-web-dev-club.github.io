@@ -1,0 +1,3 @@
+1.) Add anchors to footer links that open up to mail, github and discord
+2.) TODO: Add carousel for project images!
+3.) TODO: Add project description for corresponding image in carousel.
