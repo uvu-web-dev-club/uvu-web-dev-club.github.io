@@ -8,7 +8,7 @@
     <!--FONT AWESOME ICONS-->
     <title>Web Dev Club</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
         <nav class="nav">
@@ -20,8 +20,26 @@
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main class="main">
+        <div class="main__titleDiv"> <!--Same class as contacts and events page-->
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="main__eventDiv"> <!--Each event will have it's own main__eventDiv, display flex so the image and text are horizontal-->
+            <figure class="main__eventFigure">
+                <img src="#" class="main__eventImage"> <!--events image-->
+            </figure>
+            <div class="main__upcomingEvent">
+                <h3 class="main__eventTitle">Cotton Candy CSS</h3>
+                <h4 class="main__eventDate">03/23/2022</h4>
+                <h5 class="main__eventTime">7:00pm - 8:00pm</h5>
+                <a class="main__eventAnchor" href="#"><h6>UVU CS410</h6></a> <!--link to UVU maps-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non aliquam velit. Duis ligula tortor, tristique nec magna in, luctus gravida metus. Proin sed elit et augue convallis ultricies. Etiam et convallis enim. Curabitur non lectus et quam tristique dapibus in fermentum tortor. Aenean consectetur vestibulum urna sed interdum. Pellentesque sodales orci vel odio vehicula, ut suscipit enim molestie. Aenean lectus urna, condimentum in nisi a, porta vehicula odio. </p>
+                <a href="#">more info</a> <!--Opens up to a modal, can use bulma plugin-->
+            </div>
+        </div>
+        <div> <!--Embed Google Calendar, will make different calendar in future-->
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&src=d2ViZGV2Y2x1YnV2dUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__copyright">
