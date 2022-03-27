@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.header, .main, .footer { /* Constricts rem and centers content*/
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.body {
+    background-color: #0E1128;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Header */
+.header__wrapperWidth {
+    background-color: black;
+    box-shadow: 0px 10px 20px rgb(9, 13, 71);
+
+}
+.header__logo {
+    position: relative;
+    z-index: 0;
+    padding: 1rem;
+
+    width: 200px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background-color: black;
+    
+}
+
+.nav__ul {
+    display: flex;
+    padding: 1rem;
+}
+.nav__li {
+    padding: 0 1rem;
+}
+.nav__anchor {
+    text-decoration: none; /* removed bullets from anchors*/
+}
+
+
+
+/* Footer */
+.footer__wrapperWidth {
+    background-color: black;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}

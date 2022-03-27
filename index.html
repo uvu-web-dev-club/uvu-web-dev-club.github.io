@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/dfc6ae3438.js" crossorigin="anonymous"></script>
-    <link href="/shared.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/shared.css" rel="stylesheet">
     <!--FONT AWESOME ICONS-->
     <title>Web Dev Club</title>
 </head>
 
 <body class="body">
+    <div class="header__wrapperWidth"> <!--Div only for the background color so it stretches full width-->
     <header class="header">
         <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
         <nav class="nav">
@@ -26,9 +28,10 @@
             </ul>
         </nav>
     </header>
+    </div>
     <main class="main">
         <div class="main__joinUsDiv">
-            <img class="main__logo" src="/images/webdevclubsvglogo.svg" alt="Join us!">
+            <img class="main__logo" src="/images/webdevclublogotransparent.svg" alt="Join us!">
             <button class="main__joinButton">Join Us!</button>
         </div>
         <div class="main__infoFlexDiv">
@@ -43,7 +46,9 @@
                     create group projects, have guest speakers, and most importantly have a great time.
                 </p>
             </div>
+            <figure class="main__councilFigure">
             <img class="main__councilImage" src="/images/webdevcouncil2022.jpg" alt="Web Dev Club Council 2022">
+            </figure>
         </div>
         <div class="main__circleDivFlex">
             <div class="main__circle">
@@ -57,6 +62,7 @@
             </div>
         </div>
     </main>
+    <div class="footer__wrapperWidth">
     <footer class="footer">
         <div class="footer__copyright">
             &copy; 2022 Web Dev Club at UVU
@@ -76,6 +82,7 @@
             <!--Github-->
         </div>
     </footer>
+    </div>
 </body>
 
 </html>

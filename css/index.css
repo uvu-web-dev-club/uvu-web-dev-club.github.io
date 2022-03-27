@@ -1,0 +1,13 @@
+.main__infoFlexDiv {
+    display: flex;
+}
+
+.main__paragraphDiv {
+    width: 50%;
+}
+.main__councilImage {
+    flex-basis: 50%;
+    width: 100%;
+    height: auto;
+}
+
