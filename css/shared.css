@@ -40,14 +40,38 @@
 
 .nav__ul {
     display: flex;
+    align-items: center;
+
+    margin-bottom: 0.1rem;
     padding: 1rem;
+
     list-style-type: none;
 }
 .nav__li {
     padding: 0 1rem;
+    font-size: 1.27rem;
 }
 .nav__anchor {
     text-decoration: none; /* removed bullets from anchors*/
+    color: white;
+}
+.nav__joinButton {
+    margin-left: 0.5rem;
+    padding: 0.3rem 1.3rem;
+
+    background-color: #001902;
+
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+
+    border-style: none;
+    border-radius: 0.95rem 0.95rem 0.95rem 0.95rem;
+}
+.nav__joinAnchor {
+    text-decoration: none;
+
+    color: #E5E288;
+    font-size: 1.27rem;
 }
 
 
