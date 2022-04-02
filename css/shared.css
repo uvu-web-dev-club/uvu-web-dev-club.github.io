@@ -41,6 +41,7 @@
 .nav__ul {
     display: flex;
     padding: 1rem;
+    list-style-type: none;
 }
 .nav__li {
     padding: 0 1rem;
