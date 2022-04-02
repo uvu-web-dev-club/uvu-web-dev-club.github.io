@@ -1,3 +1,7 @@
+.main__logo {
+    padding: 4rem 0;
+}
+
 .main__infoFlexDiv {
     display: flex;
 }
