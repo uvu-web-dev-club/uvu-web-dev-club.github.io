@@ -69,3 +69,24 @@
     width: 100%;
 }
 
+.main__circleDivFlex {
+    margin: 5rem 0rem;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.main__circle {
+    height: 15rem;
+    width: 15rem;
+
+    display: flex;
+
+    background-color: #4D2853;
+
+    border-radius: 50%;
+}
+.main__circleTitle {
+    margin: auto;
+    color: white;
+}
+
