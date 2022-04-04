@@ -48,11 +48,15 @@
 }
 .main__paragraph {
     padding: 1.3rem 1.25rem 0rem 1.25rem;
+
     background-color: white;
+
     height: 100%;
+
     line-height: 2rem;
     font-size: 0.9rem;
     font-weight: 500;
+
     border-radius: 1rem;
 }
 .main__councilFigure {
