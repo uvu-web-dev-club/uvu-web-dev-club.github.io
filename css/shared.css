@@ -16,9 +16,9 @@
 
 /* Header */
 .header__wrapperWidth {
+    padding-bottom: 1rem;
     background-color: black;
     box-shadow: 0px 10px 20px rgb(9, 13, 71);
-
 }
 .header__logo {
     position: relative;
