@@ -65,7 +65,7 @@
     font-weight: 600;
 
     border-style: none;
-    border-radius: 0.95rem 0.95rem 0.95rem 0.95rem;
+    border-radius: 0.95rem;
 }
 .nav__joinAnchor {
     text-decoration: none;
@@ -81,7 +81,32 @@
     background-color: black;
 }
 .footer {
+    padding: 4rem 0rem 3.25rem 0rem;
+
     display: flex;
     justify-content: space-between;
+
     color: white;
+}
+.footer__copyrightDiv {
+    display: flex;
+    align-items: center;
+}
+.footer__copyright {
+    font-size: 1.15rem;
+}
+.footer__iconsDiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__iconWrapper {
+    padding: 0.5rem 1.5rem;
+    background-color: #001902;
+    border-radius: 1.1rem;
+    color: #E5E288;
+}
+.footer__iconTitle {
+    display: inline;
+    font-weight: 500;
 }
