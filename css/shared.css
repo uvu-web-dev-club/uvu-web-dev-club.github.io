@@ -16,9 +16,9 @@
 
 /* Header */
 .header__wrapperWidth {
+    padding: 1rem 0rem;
     background-color: black;
     box-shadow: 0px 10px 20px rgb(9, 13, 71);
-
 }
 .header__logo {
     position: relative;
@@ -40,13 +40,38 @@
 
 .nav__ul {
     display: flex;
+    align-items: center;
+
+    margin-bottom: 0.1rem;
     padding: 1rem;
+
+    list-style-type: none;
 }
 .nav__li {
     padding: 0 1rem;
+    font-size: 1.27rem;
 }
 .nav__anchor {
     text-decoration: none; /* removed bullets from anchors*/
+    color: white;
+}
+.nav__joinButton {
+    margin-left: 0.5rem;
+    padding: 0.3rem 1.3rem;
+
+    background-color: #001902;
+
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+
+    border-style: none;
+    border-radius: 0.95rem;
+}
+.nav__joinAnchor {
+    text-decoration: none;
+
+    color: #E5E288;
+    font-size: 1.27rem;
 }
 
 
@@ -56,10 +81,32 @@
     background-color: black;
 }
 .footer {
+    padding: 4rem 0rem 3.25rem 0rem;
+
     display: flex;
     justify-content: space-between;
 
-    padding: 1rem;
-
     color: white;
+}
+.footer__copyrightDiv {
+    display: flex;
+    align-items: center;
+}
+.footer__copyright {
+    font-size: 1.15rem;
+}
+.footer__iconsDiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__iconWrapper {
+    padding: 0.5rem 1.5rem;
+    background-color: #001902;
+    border-radius: 1.1rem;
+    color: #E5E288;
+}
+.footer__iconTitle {
+    display: inline;
+    font-weight: 500;
 }

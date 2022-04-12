@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dfc6ae3438.js" crossorigin="anonymous"></script>
     <link href="/css/events.css" rel="stylesheet">
     <link href="/css/shared.css" rel="stylesheet">
@@ -11,19 +14,19 @@
     <title>Web Dev Club</title>
 </head>
 <body class="body">
-    <div class="header__wrapperWidth">
-    <header class="header">
-        <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__anchor" href="/projects.html">Projects</a></li>
-                <li class="nav__li"><a class="nav__anchor" href="/events.html">Events</a></li>
-                <li class="nav__li"><a class="nav__anchor" href="/contact.html">Contact</a></li>
-                <button class="nav__joinButton"><a class="nav__joinAnchor" href="https://uvu.campuslabs.com/engage/organization/wdc" target="_blank"> Join Us!</a></button>
-            </ul>
-        </nav>
-    </header>
-    </div>
+    <div class="header__wrapperWidth"> <!--Div only for the background color so it stretches full width-->
+        <header class="header">
+            <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__anchor" href="/projects.html">Projects</a></li>
+                    <li class="nav__li"><a class="nav__anchor" href="/events.html">Events</a></li>
+                    <li class="nav__li"><a class="nav__anchor" href="/contact.html">Contact</a></li>
+                    <button class="nav__joinButton"><a class="nav__joinAnchor" href="https://uvu.campuslabs.com/engage/organization/wdc" target="_blank"> JOIN</a></button>
+                </ul>
+            </nav>
+        </header>
+        </div>
     <main class="main">
         <div class="main__titleDiv"> <!--Same class as contacts and events page-->
             <h1>Upcoming Events</h1>
@@ -46,25 +49,30 @@
         </div>
     </main>
     <div class="footer__wrapperWidth">
-    <footer class="footer">
-        <div class="footer__copyright">
-            &copy; 2022 Web Dev Club at UVU
+        <footer class="footer">
+            <div class="footer__copyrightDiv">
+                <div class="footer__copyright">
+                    &copy; 2022 Web Dev Club at UVU
+                </div>
+            </div>
+            <div class="footer__iconsDiv">
+                <div class="footer__iconWrapper">
+                    <i class="footer__icon fa-solid fa-envelope fa-lg"></i>
+                    <h3 class="footer__iconTitle">EMAIL</h3>
+                </div>
+                <!--Mail Icon-->
+                <div class="footer__iconWrapper">
+                    <i class="footer__icon fa-brands fa-discord fa-lg"></i>
+                    <h3 class="footer__iconTitle">DISCORD</h3>
+                </div>
+                <!--Discord-->
+                <div class="footer__iconWrapper">
+                    <i class="footer__icon fa-brands fa-github fa-lg"></i>
+                    <h3 class="footer__iconTitle">GITHUB</h3>
+                </div>
+                <!--Github-->
+            </div>
+        </footer>
         </div>
-        <div class="footer__iconsDiv">
-            <i class="footer__icon fa-solid fa-envelope">
-                <h3 class="footer__iconTitle">Mail</h3>
-            </i>
-            <!--Mail Icon-->
-            <i class="footer__icon fa-brands fa-discord">
-                <h3 class="footer__iconTitle">Discord</h3>
-            </i>
-            <!--Discord-->
-            <i class="footer__icon fa-brands fa-github">
-                <h3 class="footer__iconTitle">Github</h3>
-            </i>
-            <!--Github-->
-        </div>
-    </footer>
-    </div>
 </body>
 </html>
