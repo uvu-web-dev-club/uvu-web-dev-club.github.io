@@ -56,10 +56,10 @@
     color: white;
 }
 .nav__anchor:hover {
-    color: #4D2853;
+    color: #E5E288;
 }
 .nav__anchor.active {
-    color: #4D2853;
+    color: #E5E288;
 }
 .nav__joinButton {
     margin-left: 0.5rem;
@@ -83,14 +83,23 @@
     color: #E5E288;
     font-size: 1.27rem;
 }
+/*Main*/
+.main {
+    padding: 1rem;
 
-
+}
+.main__titleDiv {
+    margin: 2rem 0;
+    color: white;
+}
 /* Footer */
+
 .footer__wrapperWidth {
     background-color: black;
 }
 .footer {
     padding: 2rem;
+    margin-top: 4rem;
 
     display: flex;
     justify-content: space-between;
@@ -121,7 +130,7 @@
     color: white;
 }
 .footer__iconWrapper a:hover {
-    color: #4D2853;
+    color: #E5E288;
 }
 .footer__iconTitle {
     display: inline;
