@@ -9,7 +9,7 @@
     display: flex;
 }
 .main__projectH2 {
-    padding: .8rem 0;
+    padding: 0 0 .8rem 0;
 }
 .main__projectDescriptionFlex {
     flex-basis: 50%;
