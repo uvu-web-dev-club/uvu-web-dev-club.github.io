@@ -1,7 +1,7 @@
 .main__project {
     padding: 1.5rem;
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(0deg, rgba(255,255,255,0.8762692577030813) 0%, rgba(255,255,255,1) 100%);
     color: black;
     border-radius: .5rem;
 }

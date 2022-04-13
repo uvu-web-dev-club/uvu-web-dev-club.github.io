@@ -13,6 +13,14 @@
     background-color: #0E1128;
     font-family: 'Roboto Mono', monospace;
 }
+a {
+    text-decoration: none;
+    color: #4D2853;
+    font-weight: 500;
+}
+a:hover {
+    font-weight: 800;
+}
 
 /* Header */
 .header__wrapperWidth {

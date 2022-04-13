@@ -1,115 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dfc6ae3438.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/css/contact.css" rel="stylesheet" />
+    <link href="/css/shared.css" rel="stylesheet" />
+    <!--FONT AWESOME ICONS-->
+    <title>Web Dev Club</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/dfc6ae3438.js" crossorigin="anonymous"></script>
-  <link href="/css/contact.css" rel="stylesheet">
-  <link href="/css/shared.css" rel="stylesheet">
-  <!--FONT AWESOME ICONS-->
-  <title>Web Dev Club</title>
-</head>
-
-<body class="body">
-  <div class="header__wrapperWidth"> <!--Div only for the background color so it stretches full width-->
-    <header class="header">
-        <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
+  <body class="body">
+    <div class="header__wrapperWidth">
+      <!--Div only for the background color so it stretches full width-->
+      <header class="header">
+        <a href="/index.html"
+          ><img
+            class="header__logo"
+            src="/images/webdevclublogojusttext.svg"
+            alt="Web Dev Club Logo"
+        /></a>
+        <!--Link back to homepage-->
         <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__anchor" href="/projects.html">Projects</a></li>
-                <li class="nav__li"><a class="nav__anchor" href="/events.html">Events</a></li>
-                <li class="nav__li"><a class="nav__anchor active" href="/contact.html">Contact</a></li>
-                <button class="nav__joinButton"><a class="nav__joinAnchor" href="https://uvu.campuslabs.com/engage/organization/wdc" target="_blank"> JOIN</a></button>
-            </ul>
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a class="nav__anchor" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav__li">
+              <a class="nav__anchor" href="/events.html">Events</a>
+            </li>
+            <li class="nav__li">
+              <a class="nav__anchor active" href="/contact.html">Contact</a>
+            </li>
+            <button class="nav__joinButton">
+              <a
+                class="nav__joinAnchor"
+                href="https://uvu.campuslabs.com/engage/organization/wdc"
+                target="_blank"
+              >
+                JOIN</a
+              >
+            </button>
+          </ul>
         </nav>
-    </header>
+      </header>
     </div>
-  <main class="main">
-    <div class="main__titleDiv"> <!--Same class as contacts and events page-->
-      <h1>Contact</h1>
-    </div>
-    <div>
-      <p>
-        Please email us with any questions or inquiries.
-        <br>
-        We are interested in working with outside groups, companies, and industry professionals!
-      </p>
-      <form method="get">
-        <label id="name">
-          <input type="text" value="name">
-        </label>
-        <input type="textarea">
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-    <div>
-      <div>
-        <button><i class="fa-solid fa-envelope"></i>Mail</button>
+    <main class="main">
+      <div class="main__titleDiv">
+        <!--Same class as contacts and events page-->
+        <h1>Contact</h1>
       </div>
-      <div>
-        <button><i class="fa-brands fa-github"></i>Github</button>
+      <div class="main__contactDiv">
+        <div class="main__contactInfoFlex">
+          <p class="main__contactItem">
+            Please email us with any questions or inquiries! The Web Dev Club
+            would love to partner with outside organizations and industry
+            professionals. <br /><br />
+            webdevclubuvu@gmail.com
+          </p>
+          <div class="main__iconsDiv">
+            <div class="main__iconWrapper">
+              <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+                <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+              </a>
+            </div>
+            <div class="main__iconWrapper">
+              <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
+                <i class="footer__icon fa-brands fa-discord fa-lg"></i>
+                <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+              </a>
+            </div>
+            <div class="main__iconWrapper">
+              <a href="https://github.com/uvu-web-dev-club" target="_blank">
+                <i class="footer__icon fa-brands fa-github fa-lg"></i>
+                <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
+              </a>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div class="main__councilDiv">
+          <h2 class="main__councilH2">Council Members</h2>
+          <div class="main__councilDivInfo">
+            webdevclub(council) { <br />
+            &nbsp;&nbsp;&nbsp;council.president = "Hannah Armstrong"; <br />
+            &nbsp;&nbsp;&nbsp;council.vicepresident = "Savannah Hilton"; <br />
+            &nbsp;&nbsp;&nbsp;council.secretary = "Richard Foy"; <br />
+            &nbsp;&nbsp;&nbsp;council.treasurer = "Jacob Banuelos";<br />
+            }
+          </div>
+        </div>
       </div>
-      <div>
-        <button><i class="fa-brands fa-discord"></i>Discord</button>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h2>Council Members</h2>
-      </div>
-      <div>
-        <img src="#">
-        <p>President - Hannah Armstrong</p>
-      </div>
-      <div>
-        <img src="#">
-        <p>Vice President - Savannah Hilton</p>
-      </div>
-      <div>
-        <img src="#">
-        <p>Secretary - Richard Foy</p>
-      </div>
-      <div>
-        <img src="#">
-        <p>Treasurer - Jacob Banuelos</p>
-      </div>
-    </div>
-  </main>
-  <div class="footer__wrapperWidth">
-    <footer class="footer">
+    </main>
+    <div class="footer__wrapperWidth">
+      <footer class="footer">
         <div class="footer__copyright">
-                <figure class="footer__figureUvuLogo">
-                <img class="footer__uvuLogo" src="/images/UVUHorizontalWhite-0011.png">
-                </figure>
-                <p>&copy;2022 Web Dev Club</p>
+          <figure class="footer__figureUvuLogo">
+            <img
+              class="footer__uvuLogo"
+              src="/images/UVUHorizontalWhite-0011.png"
+            />
+          </figure>
+          <p>&copy;2022 Web Dev Club</p>
         </div>
         <div class="footer__iconsDiv">
-            <div class="footer__iconWrapper">
-                <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
-                </a>
-            </div>
-            <div class="footer__iconWrapper">
-                <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
-                    <i class="footer__icon fa-brands fa-discord fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
-                </a>
-            </div>
-            <div class="footer__iconWrapper">
-                <a href="https://github.com/uvu-web-dev-club" target="_blank">
-                    <i class="footer__icon fa-brands fa-github fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
-                </a>
-            </div>
+          <div class="footer__iconWrapper">
+            <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+              <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+            </a>
+          </div>
+          <div class="footer__iconWrapper">
+            <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
+              <i class="footer__icon fa-brands fa-discord fa-lg"></i>
+              <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+            </a>
+          </div>
+          <div class="footer__iconWrapper">
+            <a href="https://github.com/uvu-web-dev-club" target="_blank">
+              <i class="footer__icon fa-brands fa-github fa-lg"></i>
+              <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
+            </a>
+          </div>
         </div>
-    </footer>
+      </footer>
     </div>
-</body>
-
+    <script type="text/javascript" src="dist/purify.min.js"></script>
+  </body>
 </html>
