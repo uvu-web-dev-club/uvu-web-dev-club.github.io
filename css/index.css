@@ -37,7 +37,7 @@
 
     border-radius: 1.5rem;
     border: none;
-    transition: width .5s .2s;
+    
 }
 .main__joinButton a {
     text-decoration: none;
