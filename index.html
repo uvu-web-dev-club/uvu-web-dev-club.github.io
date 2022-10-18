@@ -1,70 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dfc6ae3438.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- regular css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/shared.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/dfc6ae3438.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
-    <link href="/css/index.css" rel="stylesheet">
-    <link href="/css/shared.css" rel="stylesheet">
     <!--FONT AWESOME ICONS-->
-    <title>Web Dev Club</title>
-</head>
 
-<body class="body">
-    <div class="header__wrapperWidth"> <!--Div only for the background color so it stretches full width-->
-        <header class="header">
-            <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
-            <nav class="nav">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__anchor" href="/projects.html">Projects</a></li>
-                    <li class="nav__li"><a class="nav__anchor" href="/events.html">Events</a></li>
-                    <li class="nav__li"><a class="nav__anchor" href="/contact.html">Contact</a></li>
-                    <button class="nav__joinButton"><a class="nav__joinAnchor" href="https://uvu.campusgroups.com/WDC/club_signup" target="_blank"> JOIN</a></button>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <main class="main">
-        <div class="main__joinUsDiv">
-            <img class="main__logo" src="/images/webdevclublogotransparent.svg" alt="Join us!">
-            <div class="main__joinButtonDiv">
-                <div class="main__joinButtonWrapper2">
-                    <div class="main__joinButtonWrapper1">
-                        <button class="main__joinButton"><a href="https://uvu.campusgroups.com/WDC/club_signup" target="_blank">JOIN</a></button>
-                    </div>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------- -->
+    <title>Web Dev Club</title>
+  </head>
+  <body class="body">
+    <div class="header__wrapperWidth">
+      <!--Div only for the background color so it stretches full width-->
+      <!-- navigator start-->
+      <header class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-xxl navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+              <a href="/index.html"
+                ><img
+                  class="header__logo"
+                  src="/images/webdevclublogojusttext.svg"
+                  alt="Web Dev Club Logo"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Web Dev Club
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-link" aria-current="page" href="./projects.html"
+                        >Projects</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </nav>
         </div>
-        <div class="main__circleDivFlex">
-            <div class="main__circle">
-                <h2 class="main__circleTitle">COLLABORATE</h2>
-            </div>
-            <div class="main__circle">
-                <h2 class="main__circleTitle">LEARN NEW TECH</h2>
-            </div>
-            <div class="main__circle">
-                <h2 class="main__circleTitle">NETWORK</h2>
-            </div>
+      </header>
+      <!-- navigator end -->
+      <!-- web dev club img start -->
+    </div>
+    <main class="main pt-2">
+      <div class="main__joinUsDiv">
+        <img
+          class="img-fluid"
+          src="/images/webdevclublogotransparent.svg"
+          alt="Join us!"
+        />
+        <!-- web dev club img end -->
+        <!-- join button start-->
+        <div class="main__joinButtonDiv">
+          <button
+            id="registration"
+            type="button"
+            class="main__joinButton btn btn-primary active p-3"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            JOIN
+          </button>
         </div>
+      </div>
+
+      <!-- join button end-->
+
+      <!-- bubble cards start -->
+      <section class="about-cards-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 card-wrapper">
+              <div class="card border-0" id="bubble1">
+                <div
+                  class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title" id="card-title">Collaborate</h4>
+                  <p class="card-text" id="card-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+                    dolores!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 card-wrapper">
+              <div class="card border-0" id="bubble2">
+                <div
+                  class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="https://images.unsplash.com/photo-1543946602-a0fce8117697?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title" id="card-title">Network</h4>
+                  <p class="card-text" id="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+                    omnis?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 card-wrapper">
+              <div class="card border-0" id="bubble3">
+                <div
+                  class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
+                >
+                  <img
+                    class="w-100 h-100"
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title" id="card-title">Learn New Tech</h4>
+                  <p class="card-text" id="card-body">
+                    A short caption detailing an aspect of the brand which is worth
+                    mentioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- bubble cards end -->
+
+      <!-- about start -->
+      <div class="container-fluid">
         <div class="main__infoFlexDiv">
-            <div class="main__paragraphDiv">
-                <p class="main__paragraph">
-                    &nbsp;&nbsp;&nbsp;In the Web Dev Club, aspiring Web Developers can learn new technologies, collaborate on student or club projects with fellow Web Developers and Designers, and participate in events such as hackathons and social events!<br>
-                    &nbsp;&nbsp;&nbsp;There are many ways to participate and contribute to the club while learning about website development. <a href="https://discord.gg/VC8yUwK7fe" target="_blank">Join our Discord</a> where we all hangout and talk shop!
-                
-                </p>
-            </div>
-            <figure class="main__councilFigure">
-            <img class="main__councilImage" src="/images/webdevcouncil2022.jpg" alt="Web Dev Club Council 2022">
-            </figure>
+          <p class="main__paragraph">
+            &nbsp;&nbsp;&nbsp;In the Web Dev Club, aspiring Web Developers can learn new
+            technologies, collaborate on student or club projects with fellow Web
+            Developers and Designers, and participate in events such as hackathons and
+            social events!<br />
+            &nbsp;&nbsp;&nbsp;There are many ways to participate and contribute to the
+            club while learning about website development.
+            <a href="https://discord.gg/VC8yUwK7fe" target="_blank">Join our Discord</a>
+            where we all hangout and talk shop!
+          </p>
         </div>
+        <figure class="main__councilFigure">
+          <img
+            class="main__councilImage"
+            src="/images/webdevcouncil2022.jpg"
+            alt="Web Dev Club Council 2022"
+          />
+        </figure>
     </main>
     <div class="footer__wrapperWidth">
     <footer class="footer">
@@ -73,31 +235,51 @@
                 <img class="footer__uvuLogo" src="/images/UVUHorizontalWhite-0011.png">
                 </figure>
                 <p>&copy;2022 Web Dev Club</p>
+            id="uvu-logo"
+            class="rounded mx-auto d-block"
+            src="/images/UVUHorizontalWhite-0011.png"
+            alt="UVU logo"
+          />
         </div>
-        <div class="footer__iconsDiv">
-            <div class="footer__iconWrapper">
+        <!-- uvu-logo end -->
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="bd-highlight">
+              <p class="text-light">&copy;2022 Web Dev Club</p>
+            </div>
+            <!-- contact fontawesome logo -->
+            <div class="container d-flex justify-content-end">
+              <div class="footer__iconWrapper">
                 <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+                  <i class="fa-brands fa-facebook"></i>
+                  <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
                 </a>
-            </div>
-            <div class="footer__iconWrapper">
+              </div>
+              <div class="footer__iconWrapper">
                 <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
-                    <i class="footer__icon fa-brands fa-discord fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+                  <i class="footer__icon fa-brands fa-discord fa-lg"></i>
+                  <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
                 </a>
-            </div>
-            <div class="footer__iconWrapper">
+              </div>
+              <div class="footer__iconWrapper">
                 <a href="https://github.com/uvu-web-dev-club" target="_blank">
-                    <i class="footer__icon fa-brands fa-github fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
+                  <i class="footer__icon fa-brands fa-github fa-lg"></i>
+                  <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
                 </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-    </div>
-    <script type="text/javascript" src="dist/purify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    <!-- footer end -->
 
+    <!-- <script type="text/javascript" src="dist/purify.min.js"></script> -->
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

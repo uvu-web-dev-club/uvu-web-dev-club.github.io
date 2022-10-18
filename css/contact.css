@@ -1,34 +1,47 @@
 .main__contactDiv {
-    padding: 1.5rem;
-
-    background: linear-gradient(0deg, rgba(255,255,255,0.8762692577030813) 0%, rgba(255,255,255,1) 100%);
-    color: black;
-    border-radius: .5rem;
-    text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8762692577030813) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+  border-radius: 0.5rem;
+  text-align: center;
 }
+/* .main {
+  padding-top: 5em;
+} */
 
 .main__iconsDiv {
-    display: flex;
-    justify-content: space-evenly;
-
-    width: 50%;
-    margin: auto;
-    padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
 }
 .main__iconWrapper a {
-    text-decoration: none;
-    color: black;
-    font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
 }
 .main__iconWrapper a:hover {
-    color: #4AC3FF;
+  color: #4ac3ff;
 }
 .main__councilH2 {
-    text-align: left;
+  text-align: left;
 }
 .main__councilDivInfo {
-    margin: auto;
-    padding-top: 1rem;
-
-    text-align: left;
+  margin: auto;
+  padding-top: 1rem;
+  text-align: left;
+}
+/* #footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+#uvu-logo {
+  height: 50%;
+  width: 50%;
 }

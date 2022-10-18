@@ -1,103 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dfc6ae3438.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/css/projects.css" rel="stylesheet" />
+    <link href="/css/shared.css" rel="stylesheet" />
+    <!--FONT AWESOME ICONS-->
+    <title>Web Dev Club</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------- -->
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/dfc6ae3438.js" crossorigin="anonymous"></script>
-  <link href="/css/projects.css" rel="stylesheet">
-  <link href="/css/shared.css" rel="stylesheet">
-  <!--FONT AWESOME ICONS-->
-  <title>Web Dev Club</title>
-</head>
-
-<body class="body">
-  <div class="header__wrapperWidth"> <!--Div only for the background color so it stretches full width-->
-    <header class="header">
-        <a href="/index.html"><img class="header__logo" src="/images/webdevclublogojusttext.svg" alt="Web Dev Club Logo"></a> <!--Link back to homepage-->
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__anchor active" href="/projects.html">Projects</a></li>
-                <li class="nav__li"><a class="nav__anchor" href="/events.html">Events</a></li>
-                <li class="nav__li"><a class="nav__anchor" href="/contact.html">Contact</a></li>
-                <button class="nav__joinButton"><a class="nav__joinAnchor" href="https://uvu.campusgroups.com/WDC/club_signup" target="_blank"> JOIN</a></button>
-            </ul>
+  <body class="body">
+    <div class="header__wrapperWidth">
+      <!--Div only for the background color so it stretches full width-->
+      <!-- navigator start-->
+      <header class="header">
+        <!-- <div class="container"> -->
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-black fixed-top">
+          <a href="/index.html"
+            ><img
+              class="header__logo"
+              src="/images/webdevclublogojusttext.svg"
+              alt="Web Dev Club Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Web Dev Club</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link active" aria-current="page" href="./projects.html"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://uvu.campusgroups.com/WDC/club_signup"
+                    >Join</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
-  </div>
-  <main class="main">
-    <div class="main__titleDiv">
-      <!--Same class as contacts and events page-->
-      <h1 class="main__projectsTitle">Projects</h1>
+      </header>
+      <!-- navigator end -->
     </div>
-    <div class="main__project">
-      <h2 class="main__projectH2">Web Dev Club Website ~ Spring 2022</h2>
-      <div class="main__projectFlex">
-        <div class="main__projectDescriptionFlex">
-          <p class="main__projectDescription">We started this website to represent our club and have a bigger reach to the UVU community and 
-            the developer community. <br>
-            This is our first design of the website. Our first step was brainstorming the site map, then we 
-            made low-fidelity wireframes for each page using Balsamiq. After agreeing upon the design, a Figma
-            high-fidelity was created and that was used by the developers to create the website pages. 
-            Our website is going to be constantly evolving to try out new technologies
-            and give members experience working on group projects with Github.<br><br>
-            Want to get involved? Here are some future features that we want to implement!
-          </p>
-          <ul class="main__projectUl">
-              <li class="main__projectLi">Create responsive mobile, tablet and desktop webpages</li>
-              <li class="main__projectLi">Convert the website to a CMS</li>
-              <li class="main__projectLi">Create a carousel for the projects page</li>
-              <li class="main__projectLi">Create a contact form</li> 
-              <li class="main__projectLi">Implement Sass</li>
-          </ul>
+    <main class="main pt-5">
+      <div class="container">
+        <div class="main__titleDiv">
+          <!--Same class as contacts and events page-->
+          <h1 class="main__projectsTitle text-center">Projects</h1>
         </div>
-      <div class="main__projectImages">
-        <figure class="main__projectFigure">
-          <img src="/images/balsamiq.PNG" alt="Balsamiq" class="main__projectImage">
-          <figcaption class="main__projectFigcaption">Balsamiq Low-Fidelity Wireframe</figcaption>
-        </figure>
-        <!-- <figure class="main__projectFigure">
+        <div class="main__project">
+          <h2 class="main__projectH2">Web Dev Club Website ~ Spring 2022</h2>
+          <div class="main__projectFlex">
+            <div class="main__projectDescriptionFlex">
+              <div class="container">
+                <div class="main__projectImages mx-auto">
+                  <figure class="main__projectFigure">
+                    <img
+                      src="/images/balsamiq.PNG"
+                      alt="Balsamiq"
+                      class="main__projectImage"
+                    />
+                    <figcaption class="main__projectFigcaption">
+                      Balsamiq Low-Fidelity Wireframe
+                    </figcaption>
+                  </figure>
+                  <!-- <figure class="main__projectFigure">
           <img src="/images/homepage.png" alt="Figma" class="main__projectImage">
         </figure> -->
-      </div>
-      </div>
-    </div>
-  </main>
-  <div class="footer__wrapperWidth">
-    <footer class="footer">
-        <div class="footer__copyright">
-                <figure class="footer__figureUvuLogo">
-                <img class="footer__uvuLogo" src="/images/UVUHorizontalWhite-0011.png">
-                </figure>
-                <p>&copy;2022 Web Dev Club</p>
-        </div>
-        <div class="footer__iconsDiv">
-            <div class="footer__iconWrapper">
-                <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
-                </a>
-            </div>
-            <div class="footer__iconWrapper">
-                <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
-                    <i class="footer__icon fa-brands fa-discord fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
-                </a>
-            </div>
-            <div class="footer__iconWrapper">
-                <a href="https://github.com/uvu-web-dev-club" target="_blank">
-                    <i class="footer__icon fa-brands fa-github fa-lg"></i>
-                    <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
-                </a>
-            </div>
-        </div>
-      </footer>
-  </div>
-  <script type="text/javascript" src="dist/purify.min.js"></script>
-</body>
+                </div>
+              </div>
 
+              <p class="main__projectDescription">
+                We started this website to represent our club and have a bigger reach to
+                the UVU community and the developer community. <br />
+                This is our first design of the website. Our first step was brainstorming
+                the site map, then we made low-fidelity wireframes for each page using
+                Balsamiq. After agreeing upon the design, a Figma high-fidelity was
+                created and that was used by the developers to create the website pages.
+                Our website is going to be constantly evolving to try out new technologies
+                and give members experience working on group projects with Github.<br /><br />
+                Want to get involved? Here are some future features that we want to
+                implement!
+              </p>
+              <ul class="main__projectUl">
+                <li class="main__projectLi">
+                  Create responsive mobile, tablet and desktop webpages
+                </li>
+                <li class="main__projectLi">Convert the website to a CMS</li>
+                <li class="main__projectLi">Create a carousel for the projects page</li>
+                <li class="main__projectLi">Create a contact form</li>
+                <li class="main__projectLi">Implement Sass</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main content end -->
+    <!-- footer start -->
+
+    <footer class="bg-black">
+      <div class="d-flex flex-column bd-highlight">
+        <!-- uvu-logo start -->
+        <div class="container">
+          <img
+            id="uvu-logo"
+            class="rounded mx-auto d-block"
+            src="/images/UVUHorizontalWhite-0011.png"
+            alt="UVU logo"
+          />
+        </div>
+        <!-- uvu-logo end -->
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="p-2 bd-highlight">
+              <p class="text-light">&copy;2022 Web Dev Club</p>
+            </div>
+            <!-- contact fontawesome logo -->
+            <div class="container d-flex justify-content-end">
+              <div class="footer__iconWrapper">
+                <a href="https://www.facebook.com/webdevclubuvu" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                  <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+                </a>
+              </div>
+              <div class="footer__iconWrapper">
+                <a href="https://discord.gg/H9f3H6mJZn" target="_blank">
+                  <i class="footer__icon fa-brands fa-discord fa-lg"></i>
+                  <!-- <h3 class="footer__iconTitle">DISCORD</h3> -->
+                </a>
+              </div>
+              <div class="footer__iconWrapper">
+                <a href="https://github.com/uvu-web-dev-club" target="_blank">
+                  <i class="footer__icon fa-brands fa-github fa-lg"></i>
+                  <!-- <h3 class="footer__iconTitle">GITHUB</h3> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript" src="dist/purify.min.js"></script>
+  </body>
 </html>

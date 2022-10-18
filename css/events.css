@@ -1,33 +1,42 @@
 .main__eventDiv {
-    padding: 1.5rem;
+  padding: 1.5rem;
 
-    background: linear-gradient(0deg, rgba(255,255,255,0.8762692577030813) 0%, rgba(255,255,255,1) 100%);
-    color: black;
-    border-radius: .5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8762692577030813) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+  border-radius: 0.5rem;
 }
 .main__upcomingEvent {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .main__eventTitle {
-    padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 .main__eventDescription {
-    padding: 1rem 0;
+  padding: 1rem 0;
 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .main__eventFigure {
-    margin: auto;
-    width: 50%;
-    height: auto;
+  margin: auto;
+  width: 50%;
+  height: auto;
 }
 .main__eventImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__calendarDiv {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 .main__pastEvents {
-    color: white;
+  color: white;
+}
+#uvu-logo {
+  height: 50%;
+  width: 50%;
 }
