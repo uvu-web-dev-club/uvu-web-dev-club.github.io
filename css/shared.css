@@ -1,154 +1,147 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-
-.header, .main, .footer { /* Constricts rem and centers content*/
-    max-width: 65rem;
-    margin: 0 auto;
+.header,
+.main,
+.footer {
+  /* Constricts rem and centers content*/
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
 .body {
-    background-color: #0E1128;
-    font-family: 'Roboto Mono', monospace;
+  background-color: #0e1128;
+  font-family: "Roboto Mono", monospace;
 }
 a {
-    text-decoration: none;
-    color: #4D2853;
-    font-weight: 500;
+  text-decoration: none;
+  color: #4d2853;
+  font-weight: 500;
 }
 a:hover {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 /* Header */
 .header__wrapperWidth {
-    padding: 1rem 0rem;
-    background-color: black;
+  padding: 1rem 0rem;
+  background-color: black;
 }
 
 .header__logo {
-    position: relative;
-    z-index: 0;
-    padding: 1rem;
+  position: relative;
+  z-index: 0;
+  padding: 1rem;
 
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
-    background-color: black;
-    
+  background-color: black;
 }
 
 .nav__ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    margin-bottom: 0.1rem;
-    padding: 1rem;
+  margin-bottom: 0.1rem;
+  padding: 1rem;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 .nav__li {
-    padding: 0 1rem;
-    font-size: 1.27rem;
+  padding: 0 1rem;
+  font-size: 1.27rem;
 }
 .nav__anchor {
-    text-decoration: none; /* removed bullets from anchors*/
-    color: white;
+  text-decoration: none; /* removed bullets from anchors*/
+  color: white;
 }
 .nav__anchor:hover {
-    color: #E5E288;
+  color: #e5e288;
 }
 .nav__anchor.active {
-    color: #E5E288;
+  color: #e5e288;
 }
 .nav__joinButton {
-    margin-left: 0.5rem;
-    padding: 0.3rem 1.3rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem 1.3rem;
 
-    background-color: #001902;
+  background-color: #001902;
 
-    font-family: 'Roboto Mono';
-    font-weight: 600;
+  font-family: "Roboto Mono";
+  font-weight: 600;
 
-    border-style: none;
-    border-radius: 0.95rem;
+  border-style: none;
+  border-radius: 0.95rem;
 }
 .nav__joinButton:hover {
-    background-color: #4D2853;
-    color: white;
+  background-color: #4d2853;
+  color: white;
 }
 .nav__joinAnchor {
-    text-decoration: none;
+  text-decoration: none;
 
-    color: #E5E288;
-    font-size: 1.27rem;
+  color: #e5e288;
+  font-size: 1.27rem;
 }
 /*Main*/
 .main {
-    padding: 1rem;
-
+  padding: 1rem;
 }
 .main__titleDiv {
-    margin: 2rem 0;
-    color: white;
+  margin: 2rem 0;
+  color: white;
 }
 /* Footer */
 
 .footer__wrapperWidth {
-    background-color: black;
+  background-color: black;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 2rem;
-    margin-top: 4rem;
-
-    color: white;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 2rem;
+  margin-top: 4rem;
+  /* color: white; */
 }
 
-
-.footer__copyright {
-    display: flex;
-    align-items: center;
-}
-.footer__figureUvuLogo {
-    width: 50%;
-}
-.footer__uvuLogo {
-    width: 100%;
-    height: auto;
-}
-
+/* .footer__copyright {
+  display: flex;
+  align-items: center;
+} */
+/* .footer__figureUvuLogo {
+  width: 50%;
+} */
+/* .footer__uvuLogo {
+  width: 100%;
+  height: auto;
+} */
 
 .footer__iconsDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-    width: 20%;
+  width: 20%;
 }
 .footer__iconWrapper {
-    padding: 0.5rem 1.5rem;
-    
-    font-size: 1.5rem;
-   
-    color: #E5E288;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: #e5e288;
 }
 /*Social media icons*/
 .footer__iconWrapper a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 .footer__iconWrapper a:hover {
-    color: #E5E288;
+  color: #e5e288;
 }
-

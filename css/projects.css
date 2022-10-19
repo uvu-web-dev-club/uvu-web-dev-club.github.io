@@ -1,45 +1,54 @@
 .main__project {
-    padding: 1.5rem;
+  padding: 1.5rem;
 
-    background: linear-gradient(0deg, rgba(255,255,255,0.8762692577030813) 0%, rgba(255,255,255,1) 100%);
-    color: black;
-    border-radius: .5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.8762692577030813) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+  border-radius: 0.5rem;
 }
 .main__projectFlex {
-    display: flex;
+  display: flex;
 }
 .main__projectH2 {
-    padding: 0 0 .8rem 0;
+  padding: 0 0 0.8rem 0;
 }
 .main__projectDescriptionFlex {
-    flex-basis: 50%;
+  /* flex-basis: 50%; */
 }
 .main__projectDescription {
-    padding-bottom: 1.8rem;
+  /* padding-bottom: 1.8rem; */
 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
 }
 .main__projectUl {
-    line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
 .main__projectImages {
-    flex-basis: 50%;
+  /* flex-basis: 50%; */
 
-    padding: 0 1rem 1rem 1rem;
-    width: 100%;
+  /* padding: 0 1rem 1rem 1rem; */
+  width: 50%;
 }
 .main__projectFigure {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .main__projectImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    box-shadow: 2px 2px 2px #07091440;
+  box-shadow: 2px 2px 2px #07091440;
 }
 .main__projectFigcaption {
-    font-size: .6rem;
-    text-align: right;
+  font-size: 0.6rem;
+  text-align: right;
+}
+#uvu-logo {
+  height: 50%;
+  width: 50%;
 }
