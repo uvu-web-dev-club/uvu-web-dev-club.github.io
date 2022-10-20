@@ -9,29 +9,14 @@
   color: black;
   border-radius: 0.5rem;
 }
-.main__projectFlex {
-  display: flex;
-}
-.main__projectH2 {
-  padding: 0 0 0.8rem 0;
-}
-.main__projectDescriptionFlex {
-  /* flex-basis: 50%; */
-}
-.main__projectDescription {
-  /* padding-bottom: 1.8rem; */
 
+.main__projectDescription {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
 }
-.main__projectUl {
-  /* line-height: 1.5rem; */
-}
-.main__projectImages {
-  /* flex-basis: 50%; */
 
-  /* padding: 0 1rem 1rem 1rem; */
+.main__projectImages {
   width: 50%;
 }
 .main__projectFigure {
