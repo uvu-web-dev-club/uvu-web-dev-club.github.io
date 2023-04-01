@@ -1,3 +1,7 @@
+body {
+  transform: rotate(180deg);
+}
+
 .main__joinUsDiv {
   padding: 0 0 1.25rem 0;
   text-align: center;
